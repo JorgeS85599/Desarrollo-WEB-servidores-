@@ -19,6 +19,8 @@ function imprimirArray($array) {
 
 imprimirArray($noms);
 
+/**
+
 $alumnes = ['Alex' => ['29657841J','Alex',18], 'Jorge' => ['21808437K','Jorge',22], 'Ana' => ['22235478G','Ana',19]];
 
 echo "<table>";
@@ -34,8 +36,8 @@ echo "<td> ${alumnes['Jorge'][2]} </td>";
 echo "</tr>";
 echo "<tr>";
 echo "<td> ${alumnes['Ana'][0]} </td>";
-echo "<td> ${alumnes['Ana'][1]} </td>";
-echo "<td> ${alumnes['Ana'][2]} </td>";
+echo "<td>". alumnes['Ana'][1]} </td>";
+echo "<td>". $alumnes['Ana'][2] ."</td>";
 echo "</tr>";
 echo "</table>";
 
@@ -54,6 +56,8 @@ foreach ($palabras_ingles as $ingles => $espanyol) {
     echo "</tr>";
 }
 echo "</table>";
+ */
+
 
 
 
