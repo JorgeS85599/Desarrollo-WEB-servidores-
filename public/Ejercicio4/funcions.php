@@ -11,8 +11,9 @@ function contrasenyaSegura($contrasenya) {
 
 function insert($nom_taula,$valors) {
     $campos = implode(",",array_keys($valors));
-    $valores = implode(",",$valors);
-    $sentencia = sprintf("insert into %s (%s) values (%s)",$nom_taula,$campos,$valores);
+    $valores = implode("\",\"",$valors);
+    $sentencia_inicial = 'insert into %s (%s) values ("%s")';
+    $sentencia = sprintf($sentencia_inicial,$nom_taula,$campos,$valores);
     return $sentencia;
 }
 
