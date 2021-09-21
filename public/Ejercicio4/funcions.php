@@ -18,8 +18,8 @@ function insert($nom_taula,$valors) {
 }
 
 function calculator($numA,$numB,$operation) {
-    if ($operation != 'suma' || $operation != 'resta' || $operation != 'multiplicacion' ||
-    $operation != 'division' || is_null($operation)) {
+    if ($operation != 'suma' && $operation != 'resta' && $operation != 'multiplicacion' &&
+    $operation != 'division' && is_null($operation)) {
         echo "Debes de introducir una operacion correcta";
     } else {
         return $operation($numA,$numB);
