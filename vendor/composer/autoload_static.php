@@ -15,6 +15,10 @@ class ComposerStaticInit6684fe8c38c16687561afe969484cdb4
         array (
             'Psr\\Log\\' => 8,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -24,7 +28,11 @@ class ComposerStaticInit6684fe8c38c16687561afe969484cdb4
         ),
         'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+            0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/public/Ejercicio4.1',
         ),
     );
 
